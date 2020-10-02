@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 
 warnings.simplefilter("ignore", OptimizeWarning)
 
-leVersion = "v1.2.2"
+leVersion = "v1.2.3"
 
 if len(sys.argv) > 1:
 	allMSdataPaths = sys.argv[1:]
