@@ -56,8 +56,9 @@ print("------ MetaboPique %s ------\n" % leVersion)
 
 topfolderName = input(" > New folder name for file output? ")
 if os.path.exists(topfolderName):
-	print("Folder already exists! All contents will be deleted!")
+	print("Folder already exists! Deleting all contents in directory...!")
 	shutil.rmtree(topfolderName)
+	print("Complete!")
 	os.makedirs(topfolderName)
 
 else: os.makedirs(topfolderName)
