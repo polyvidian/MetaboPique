@@ -1160,7 +1160,7 @@ def theCompositer(rawData, mgfWriter, groupProgress, rawGroupProgress, majProgre
 
 
 
-			mgfWriter.write("\nID: %s\nPrecursor m/z: %s\nCharge: %s\nConstituent spectra: %s\n" % (theData[0], theData[1], theData[2], theData[3]))
+			#mgfWriter.write("\nID: %s\nPrecursor m/z: %s\nCharge: %s\nConstituent spectra: %s\n" % (theData[0], theData[1], theData[2], theData[3]))
 			mgfWriter.write("BEGIN IONS\nTITLE=%s\nCHARGE=%s\nPEPMASS=%s\nCOMMENT=Type:MajoritySpectrum; ConstituentSpectra:%s; XIC:%s\n" % (theData[0], theData[1], theData[2], theData[3], theData[4]))
 			for peak in theData[5]:
 				mgfWriter.write("%s %s (%s/%s) %sppm\n" % (peak[0], peak[1], peak[2], peak[3], peak[4]))
